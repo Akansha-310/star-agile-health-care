@@ -20,7 +20,7 @@ pipeline {
         
      stage('Deploy') {
             steps {
-                sh 'sudo docker run -itd --name star-agile-health-care -p 8083:8081 akanshaaws/star-agile-health-care:latest'
+                sh 'sudo docker run -itd --name star-agile-health-care -p 8083:8080 akanshaaws/star-agile-health-care:latest'
                   
                 }
             }
